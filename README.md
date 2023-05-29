@@ -4,7 +4,7 @@
 #Nested Navigation
 Nested navigation allows you to group destinations into a nested graph. This can be useful for modularizing your app's UI, such as by grouping all of the screens in a login flow into a single nested graph.
 
-![Project flow](NestedNav.png)
+![Project flow](https://github.com/satyajitdas95/satyajitdas95/blob/main/imageForReadme/NestedNav.png?raw=true)
 
 To create a nested navigation graph, you can use the NavGraphBuilder.navigation() extension function. This function takes a builder argument that you can use to provide the composables that make up the nested graph.
 
