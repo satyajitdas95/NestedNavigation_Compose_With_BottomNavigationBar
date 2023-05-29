@@ -1,17 +1,21 @@
 package com.satyajit.nestednavigationcompose.ui.home_screen
 
-import androidx.compose.material3.ExperimentalMaterial3Api
+import android.annotation.SuppressLint
+import androidx.compose.material.Scaffold
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.NavHostController
+import androidx.navigation.compose.rememberNavController
+import com.satyajit.nestednavigationcompose.navigation_graphs.HomeScreenNavGraph
 
+@SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable
-fun HomeScreen() {
-
+fun HomeScreen(navHostController: NavHostController = rememberNavController()) {
+    Scaffold(bottomBar = { BottomBar(navController = navHostController) })
+    {
+        HomeScreenNavGraph(navController = navHostController)
+    }
 }
 
 
-@Preview
-@Composable
-fun PreviewHomeScreen() {
 
-}
+

@@ -1,4 +1,4 @@
-package com.satyajit.nestednavigationcompose.ui.auth_screen
+package com.satyajit.nestednavigationcompose.ui.auth_screen.forgot_password
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -21,10 +21,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun AuthScreen(
-    onClickOfLogin: () -> Unit,
-    onclickOfSignUp: () -> Unit,
-    onclickOfForgotPassword: () -> Unit
+fun SignupScreen(
+    onClickOfSignup: () -> Unit
 ) {
     Row(
         Modifier
@@ -37,46 +35,20 @@ fun AuthScreen(
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {
-            Text(text = "Welcome", fontSize = 36.sp)
+            Text(text = "Signup", fontSize = 36.sp)
 
             Spacer(modifier = Modifier.height(20.dp))
 
             Button(
-                onClick = { onClickOfLogin },
+                onClick = { onClickOfSignup },
                 Modifier.width(200.dp),
                 colors = ButtonDefaults.outlinedButtonColors(
                     Color.Blue
                 )
-            )
-            {
-                Text(text = "Login to Explore", color = Color.White, fontSize = 16.sp)
+            ){
+                Text(text = "Proceed")
             }
-
-            Spacer(modifier = Modifier.height(20.dp))
-            Button(
-                onClick = { onclickOfSignUp },
-                Modifier.width(200.dp),
-                colors = ButtonDefaults.outlinedButtonColors(
-                    Color.Blue
-                )
-            )
-            {
-                Text(text = "Sign up", color = Color.White, fontSize = 16.sp)
-            }
-
-            Spacer(modifier = Modifier.height(20.dp))
-
-            Button(
-                onClick = { onclickOfForgotPassword },
-                Modifier.width(200.dp),
-                colors = ButtonDefaults.outlinedButtonColors(
-                    Color.Blue
-                )
-            )
-            {
-                Text(text = "Forgot Password", color = Color.White, fontSize = 16.sp)
-            }
-
+           
         }
 
     }
@@ -87,6 +59,6 @@ fun AuthScreen(
 @Composable
 fun PreviewAuthScreen() {
     Surface {
-        AuthScreen({}, {}, {})
+        SignupScreen({})
     }
 }

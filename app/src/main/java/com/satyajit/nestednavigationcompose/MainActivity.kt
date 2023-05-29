@@ -10,6 +10,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.NavHostController
+import androidx.navigation.compose.rememberNavController
+import com.satyajit.nestednavigationcompose.navigation_graphs.RootNavHost
 import com.satyajit.nestednavigationcompose.ui.theme.NestedNavigationComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -17,7 +20,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             NestedNavigationComposeTheme {
-
+                RootNavHost(navHostController = rememberNavController())
             }
         }
     }
