@@ -7,8 +7,7 @@
 <br>
 <br>
 
-
-![NestedNav](https://github.com/satyajitdas95/NestedNavigation_Compose_With_BottomNavigationBar/assets/24476245/59681dc9-25e8-4c18-b865-8c18c242cf68)
+![NestedNav](https://github.com/satyajitdas95/NestedNavigation_Compose_With_BottomNavigationBar/assets/24476245/a74a564d-3b63-4fde-be22-a87f46feb58d)
 
 
 <br>
